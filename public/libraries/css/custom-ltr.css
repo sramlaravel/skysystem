@@ -1,0 +1,23 @@
+/*---------------------------------*/
+/*----------index page----------*/
+/*service section*/
+/*---------------------------------*/
+
+.features ul li{
+    border: 1px solid #E0E0E0;
+    border-left: 0;
+    border-top: 0;
+}
+
+.features ul li:nth-child(3n+3) {
+    border-right: 0;
+}
+
+.feature-element li .line-feature i {
+    left: -4px;
+}
+
+[type=email], [type=file], [type=number], [type=password], [type=tel], [type=url], code, samp, var {
+    text-align: left;
+    direction: ltr;
+}
