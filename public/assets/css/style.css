@@ -1373,6 +1373,8 @@ p:last-child {
     margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
+	text-align: center;
+	float:right;
 }
 
 .about-content h2 {
@@ -1380,6 +1382,7 @@ p:last-child {
 	font-weight: 700;
 	margin-top: 10px;
 	margin-bottom: 15px;
+	text-align: center;
 }
 
 ul.about-list-box {

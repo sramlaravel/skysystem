@@ -78,10 +78,16 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <div class="about-content">
-                        <h6>{{__('messages.About us')}}</h6>
-                        <h2>{{ isset($abouts[0]) ? $abouts[0]->title : '' }}</h2>
-                        <p>{{ isset($abouts[0]) ? $abouts[0]->description : '' }}</p>
+
+                        <div class="about-content">
+                        <h6> {{__('messages.About us')}} </h6>
+
+
+                         <h5>{{ isset($abouts[0]) ? $abouts[0]->title : '' }} </h5>
+                    </div>
+
+
+                        <p>  {{ isset($abouts[0]) ? $abouts[0]->description : '' }} </p>
                         <ul class="about-list-box">
                             <li>
                                 <div class="about-list-icon">
@@ -160,128 +166,79 @@
 {{--Start Services Section -->--}}
     <section class="service-area-4 pt-100 pb-70">
                     <div class="container">
-                        <div class="row">
+
                             <div class="col-sm-12">
-                                <div class="section-title">
-                                    <h6> </h6>
-                                    <h2>{{__('messages.Services')}}</h2>
+                                <div class="about-content" style="color: #ff561d;">
+                                <h2>{{__('messages.Services')}}</h2>
                                 </div>
                             </div>
-                        </div>
-            <div class="row">
-                @isset($Services)
-                @foreach($Services as $slider)
-                    <div class="col-lg-4 col-md-6 col-sm-12 services-item-4">
-                        <a href="{{URL::to('services_detials/'.$slider->id) }}" class="single-services-4">
-                            <div class="services-icon-4">
-                                <i class="front-icon {{$slider->model}} icon"></i>
-                                <i class="back-icon-4 {{$slider->model}} icon"></i>
-                            </div>
-                            <div class="services-text-4">
-                                <h3>{{$slider->title}}</h3>
-                                <p>{{ str_limit($slider->description,100,'...') }}  </p>
-                            </div>
-                            <div class="bg-back-icon-4">
-                                <i class="{{$slider->model}} icon"></i>
-                            </div>
-                        </a>
-                    </div>
+                        <div class="row" style="    direction: rtl;">
+                                @isset($Services)
+                                @foreach($Services as $slider)
 
-                    {{--<div class="col-lg-4 col-md-6">--}}
-                    {{--<div class="single-services-box">--}}
-                    {{--<div class="services-icon">--}}
-                    {{--<i class="{{$slider->model}} icon"></i>--}}
-                    {{--</div>--}}
-                    {{--<h3>{{$slider->title}}</h3>--}}
-                    {{--<p>{{ str_limit($slider->description,100,'...') }}  </p>--}}
-                    {{--<div class="services-btn">--}}
-                    {{--<a href="single-services.html" class="services-btn-one">{{__('messages.read more')}} </a>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
-                @endforeach
-                @endisset
-                {{--<div class="col-lg-4 col-md-6">--}}
-                    {{--<div class="single-services-box">--}}
-                        {{--<div class="services-icon">--}}
-                            {{--<i class="{{$slider->model}} icon"></i>--}}
-                        {{--</div>--}}
-                        {{--<h3>{{$slider->title}}</h3>--}}
-                        {{--<p>{{ str_limit($slider->description,100,'...') }}  </p>--}}
-                        {{--<div class="services-btn">--}}
-                            {{--<a href="single-services.html" class="services-btn-one">{{__('messages.read more')}} </a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services-box">
-                        <div class="services-icon">
-                            <i class="machineLearning icon"></i>
-                        </div>
-                        <h3>Cyber Security</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
-                        <div class="services-btn">
-                            <a href="single-services.html" class="services-btn-one">Read More </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services-box">
-                        <div class="services-icon">
-                            <i class="microservice icon"></i>
-                        </div>
-                        <h3>Business Improvement</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
-                        <div class="services-btn">
-                            <a href="single-services.html" class="services-btn-one">Read More </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services-box">
-                        <div class="services-icon">
-                            <i class="cloudSecurity icon"></i>
-                        </div>
-                        <h3>Professional Services</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
-                        <div class="services-btn">
-                            <a href="single-services.html" class="services-btn-one">Read More </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services-box">
-                        <div class="services-icon">
-                            <i class="iotSolutions icon"></i>
-                        </div>
-                        <h3>Cloud Services</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
-                        <div class="services-btn">
-                            <a href="single-services.html" class="services-btn-one">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services-box">
-                        <div class="services-icon">
-                            <i class="migrationStrategies icon"></i>
-                        </div>
-                        <h3>Data Backup & Recovery</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
-                        <div class="services-btn">
-                            <a href="single-services.html" class="services-btn-one">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                    <div class="services-more-btn-box text-center">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 services-item-4">
+                                        <a href="{{URL::to('services_detials/'.$slider->id) }}" class="single-services-4">
+                                            <div class="services-icon-4">
+                                                <i class="front-icon {{$slider->model}} icon"></i>
+                                                <i class="back-icon-4 {{$slider->model}} icon"></i>
+                                            </div>
+                                            <div class="services-text-4">
+                                                <h3>{{$slider->title}}</h3>
+                                                <p>{{ str_limit($slider->description,100,'...') }}  </p>
+                                            </div>
+                                            <div class="bg-back-icon-4">
+                                                <i class="{{$slider->model}} icon"></i>
+                                            </div>
+                                            <div class="services-4-number-bg"><span>{{$slider->key+1}} </span></div>
+                                        </a>
+                                    </div>
 
-                        <a class="btn-primary" href="{{route('Services')}}"> {{__('messages.More Services')}}</a>
-                    </div>
-                </div>
+
+                                {{--<div class="col-lg-4 col-md-6">--}}
+                                {{--<div class="single-services-box">--}}
+                                {{--<div class="services-icon">--}}
+                                {{--<i class="{{$slider->model}} icon"></i>--}}
+                                {{--</div>--}}
+                                {{--<h3>{{$slider->title}}</h3>--}}
+                                {{--<p>{{ str_limit($slider->description,100,'...') }}  </p>--}}
+                                {{--<div class="services-btn">--}}
+                                {{--<a href="single-services.html" class="services-btn-one">{{__('messages.read more')}} </a>--}}
+                                {{--</div>--}}
+                                {{--</div>--}}
+                                {{--</div>--}}
+                            @endforeach
+                            @endisset
+                            {{--<div class="col-lg-4 col-md-6">--}}
+                                {{--<div class="single-services-box">--}}
+                                    {{--<div class="services-icon">--}}
+                                        {{--<i class="{{$slider->model}} icon"></i>--}}
+                                    {{--</div>--}}
+                                    {{--<h3>{{$slider->title}}</h3>--}}
+                                    {{--<p>{{ str_limit($slider->description,100,'...') }}  </p>--}}
+                                    {{--<div class="services-btn">--}}
+                                        {{--<a href="single-services.html" class="services-btn-one">{{__('messages.read more')}} </a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+
+                        </div>
+
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="services-more-btn-box text-center">
+
+
+                                            <a class="btn-primary" href="{{route('Services') }}"> {{__('messages.More Services')}}  </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
             </div>
-        </div>
+
+
     </section>
     <!-- End Services Section -->
     <!-- Start Counter Section -->

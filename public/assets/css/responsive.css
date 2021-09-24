@@ -110,7 +110,7 @@
 		margin-bottom: 20px;
 	}
 	.page-title-content {
-		text-align: left;
+		text-align: right;
 		margin-top: 90px;
 	}
 	.about-image2 {
@@ -335,7 +335,7 @@
 		margin-bottom: 20px;
 	}
 	.page-title-content {
-		text-align: left;
+		text-align: right;
 		margin-top: 90px;
 	}
 	.about-image2 {
@@ -366,7 +366,7 @@
 	}
 	.page-title-area {
 		background: #5764ec;
-		background: linear-gradient(to right,rgb(87 100 236) 0,rgba(58,67,74,0) 70%);
+		background: linear-gradient(to left,rgb(87 100 236) 0,rgba(58,67,74,0) 70%);
 	}
 	.page-title-content h2 {
 		font-size: 30px;
