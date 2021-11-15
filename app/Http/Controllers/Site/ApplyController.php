@@ -5,9 +5,12 @@ namespace App\Http\Controllers\Site;
 use App\Apply;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ApplyRequest;
+
+use App\Models\Jobs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
- 
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
 
 class ApplyController extends Controller
 {
@@ -31,7 +34,7 @@ class ApplyController extends Controller
     public function fileUpload(ApplyRequest $req,$id )
     {
 
-        $Detail=DB::table('jobs')->where(['id'=>$id])->get();
+        $Detail=Jobs ::select('id','title_'.LaravelLocalization::getCurrentLocale().' as title','requirements_'.LaravelLocalization::getCurrentLocale().' as  requirements','location_'.LaravelLocalization::getCurrentLocale().' as  location','image', 'updated_at','created_at')-> where('id', '=', $id)->get();
 
 
 

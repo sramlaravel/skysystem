@@ -1,0 +1,14 @@
+.navbar-brand {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+.mr-auto, .mx-auto {
+    margin-left: auto!important;
+    margin-right: 0!important;
+}
+.close {
+    float: left;
+}
+.modal-header .close {
+    margin: -1rem -1rem  -1rem;
+}

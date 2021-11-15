@@ -31,7 +31,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-content">
                         <h6>{{__('messages.About us')}}</h6>
-                        <h2>{{ isset($abouts[0]) ? $abouts[0]->title : '' }}</h2>
+                        <h2 style="font-size: 20px">{{ isset($abouts[0]) ? $abouts[0]->title : '' }}</h2>
                         <p>{{ isset($abouts[0]) ? $abouts[0]->description : '' }}</p>
                         <ul class="about-list-box">
                             <li>
@@ -225,7 +225,7 @@
                             {{__('messages.coding')}} </h3>
                             <p>  {{__('messages.coding1')}}</p>
                         </div>
-                        <div class="whychoose-number-bg"><span </span></div>
+                        <div class="whychoose-number-bg"><span> </span></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">

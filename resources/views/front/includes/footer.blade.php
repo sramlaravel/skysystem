@@ -1,5 +1,5 @@
 <!-- Start Footer Section -->
-<section class="footer-area">
+<section class="footer-area" style=" direction: rtl;">
     <div class="container">
         <div class="row">
 
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 footer-box-item">
-                <div class="footer-about footer-list">
+                <div class="footer-about footer-list"  style="text-align: right;">
                     <a class="footer-logo" href="#">
                         <img src="{{asset('assets/img/logo-black.png')}}"calass="white-logo" alt="logo">
                         <p>{{ isset($abouts[0]) ? $abouts[0]->description : '' }}</p>

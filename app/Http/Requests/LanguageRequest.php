@@ -38,7 +38,7 @@ class LanguageRequest  extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'هذا الحقل مطلوب',
+            'required' =>  __('messages.required'),
             'in' => 'القيم المدخلة غير صحيحة ',
             'title.string' => 'اسم العنوان  لابد ان يكون احرف',
             'description.max' => 'العنوان  لابد الا يزيد عن 100 احرف ',

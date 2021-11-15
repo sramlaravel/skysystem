@@ -64,54 +64,107 @@
 
                                                 <h4 class="form-section">
                                                     <i class="ft-home"></i> بيانات الوظيفة </h4>
+
                                                 <div class="row">
-                                                    <div class="col-md-12">
+
+                                                    <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="projectinput1"> عنوان الوظيفة </label>
-                                                            <input type="text"    value="{{Request::old('title')}}" id="name"
+                                                            <label for="projectinput1"> اسم الوظيفة - بالعربي  </label>
+                                                            <input type="text" value="" id="title_ar"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   name="title">
-                                                            @error("title")
-                                                            <span class="text-danger">{{$message}}</span>
+                                                                   name="title_ar">
+                                                            @error("title_ar")
+                                                            <span class="text-danger">  هذا الحقل مطلوب</span>
                                                             @enderror
                                                         </div>
+
                                                     </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> اسم الوظيفة  -بالانجليزي   </label>
+                                                            <input type="text" value="" id="title_en"
+                                                                   class="form-control"
+                                                                   placeholder="  "
+                                                                   name="title_en">
+                                                            @error("title_en")
+                                                            <span class="text-danger">  هذا الحقل مطلوب</span>
+                                                            @enderror
+                                                        </div>
+
+                                                    </div>
+
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
 
                                                         <div class="form-group">
-                                                            <label for="projectinput1">متطلبات الوظيفه</label>
+                                                            <label for="projectinput1"> متطلبات الوظيفة بالعربي </label>
 
-                                                            <textarea class="form-control" id="placeTextarea" rows="5"
-                                                                      name="requirements" type="text"
-                                                                      placeholder="ادخل الوصف.">   {{Request::old('requirements')}} </textarea>
-                                                            @error('requirements')
+                                                            <textarea  class="form-control"      id="placeTextarea" rows="3"  name="description_ar" type="text"   placeholder="ادخل الوصف."    >{{Request::old('requirements_ar')}}</textarea>
+                                                            @error('requirements_ar')
                                                             <span class="text-danger">{{$message}} </span>
                                                             @enderror
                                                         </div>
 
+                                                        @error("description_ar")
+                                                        <span class="text-danger"> هذا الحقل مطلوب</span>
+                                                        @enderror
                                                     </div>
                                                 </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
 
-
-                                                <div class="row">
-                                                    <div class="col-md-12 ">
                                                         <div class="form-group">
-                                                            <label for="projectinput1">الموقع </label>
+                                                            <label for="projectinput1"> متطلبات الوظيفة بالانجليزي </label>
+
+                                                            <textarea  class="form-control"      id="placeTextarea" rows="3"  name="description_en" type="text"   placeholder="ادخل الوصف."    >{{Request::old('requirements_en')}}</textarea>
+                                                            @error('requirements_en')
+                                                            <span class="text-danger">{{$message}} </span>
+                                                            @enderror
+                                                        </div>
+
+                                                        @error("requirements_en")
+                                                        <span class="text-danger"> هذا الحقل مطلوب</span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row">
+                                                    <div class="col-md-6 ">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1">الموقع بالعربي  </label>
                                                             <input type="text" id="mobile"
                                                                    class="form-control"
-                                                                   placeholder="" name="location"
-                                                                   value="{{Request::old('location')}}">
+                                                                   placeholder="" name="location_ar"
+                                                                   value="{{Request::old('location_ar')}}">
 
-                                                            @error("location")
+                                                            @error("location_ar")
                                                             <span class="text-danger"> {{$message}}</span>
                                                             @enderror
                                                         </div>
                                                     </div>
 
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput1"> الموقع  -بالانجليزي   </label>
+                                                        <input type="text" value="" id="location_en"
+                                                               class="form-control"
+                                                               placeholder="  "
+                                                               name="location_en">
+                                                        @error("location_en")
+                                                        <span class="text-danger">  هذا الحقل مطلوب</span>
+                                                        @enderror
+                                                    </div>
 
+                                                </div>
 
                                                 </div>
 
@@ -137,7 +190,7 @@
                                                     {{--</div>--}}
                                                 </div>
 
-                                            </div>
+
 
 
 
@@ -156,8 +209,8 @@
                             </div>
                         </div>
                     </div>
+                    </div>
 
-               </div>
                 </section>
             </div>
 

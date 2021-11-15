@@ -37,7 +37,7 @@
         <div class="container">
             <div class="inspire-responsive-menu">
                 <div class="logo">
-                    <a href="index-2.html"> <img src="assets/img/logo-black.png" alt="logo"> </a>
+                    <a href="{{route('home') }}"> <img src="{{asset('assets/img/logo-black.png')}}" alt="logo"> </a>
                 </div>
             </div>
         </div>
@@ -67,10 +67,10 @@
 
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">{{__('messages.jobs')}} </a>
+                                    <a href="{{ route('jobs') }}" class="nav-link">{{__('messages.jobs')}} </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">{{__('messages.Contact Us')}}</a>
+                                    <a href="{{route('contact') }}" class="nav-link">{{__('messages.Contact Us')}}</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{route('blog') }}" class="nav-link">{{__('messages.News')}} </a>
@@ -78,7 +78,7 @@
 
                         <li class="nav-item"> <a href="{{route('Services') }}" class="nav-link">{{__('messages.Services')}}   </a>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link">Pages </a>
+
 
                         </li>
                         <li class="nav-item"> <a href="{{route('about') }}" class="nav-link">{{__('messages.About')}}   </a>

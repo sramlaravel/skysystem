@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Job;
 use Illuminate\Http\Request;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class JobeController extends Controller
 {
@@ -15,8 +16,12 @@ class JobeController extends Controller
      */
     public function index()
     {
-        $job=Job::orderBy  ('id','DESC')->paginate(8);
-        return view('front.careers.job',['job'=>$job]);
+        $job=Job::select('id','title_'.LaravelLocalization::getCurrentLocale().' as title','requirements_'.LaravelLocalization::getCurrentLocale().' as  requirements','location_'.LaravelLocalization::getCurrentLocale().' as  location','image', 'updated_at','created_at')->orderBy('id','DESC')->paginate(8);
+
+
+
+//        $job=Job::orderBy  ('id','DESC')->paginate(8);
+        return view('front.careers.job', compact('job','job')) ;
     }
 
     /**

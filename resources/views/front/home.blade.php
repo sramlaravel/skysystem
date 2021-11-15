@@ -296,7 +296,7 @@
     <!-- Start Why Choose Us Section -->
     <section class="whychoose-area section-padding">
         <div class="container">
-            <div class="row">
+            <div class="row" style="direction: rtl;">
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h6> {{__('messages.differnet')}}  </h6>
@@ -304,13 +304,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" >
                 <div class="col-lg-4 col-md-6">
                     <div class="whychoose-single-item">
                         <div class="whychoose-icon-box">
                             <span class="whychoose-icon-number">*</span>
                         </div>
-                        <div class="whychoose-info">
+                        <div class="whychoose-info" style="direction: rtl;">
                             <h3>  {{__('messages.Staff')}} </h3>
                             <p>{{__('messages.staff1')}}  </p>
                         </div>
@@ -334,7 +334,7 @@
                         <div class="whychoose-icon-box">
                             <span class="whychoose-icon-number"> </span>
                         </div>
-                        <div class="whychoose-info">
+                        <div class="whychoose-info" style="direction: rtl;">
                             <h3>{{__('messages.advanc')}}
                             </h3>
                             <p>{{__('messages.advanc1')}}  </p>
@@ -342,12 +342,12 @@
                         <div class="whychoose-number-bg"><span> </span></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" style="direction: rtl;">
                     <div class="whychoose-single-item">
                         <div class="whychoose-icon-box">
                             <span class="whychoose-icon-number"> </span>
                         </div>
-                        <div class="whychoose-info">
+                        <div class="whychoose-info" style="direction: rtl;">
                             <h3>
                                 {{__('messages.coding')}} </h3>
                             <p>  {{__('messages.coding1')}}</p>
@@ -372,7 +372,7 @@
                         <div class="whychoose-icon-box">
                             <span class="whychoose-icon-number"> </span>
                         </div>
-                        <div class="whychoose-info">
+                        <div class="whychoose-info" style="direction: rtl;">
                             <h3>  {{__('messages.price')}} </h3>
                             <p>  {{__('messages.price1')}}  </p>
                         </div>
@@ -387,7 +387,7 @@
     <!-- Start Project Section -->
     <section class="project-flip-area section-padding">
         <div class="container">
-            <div class="row">
+            <div class="row" style="direction: rtl;margin-right: 15px;">
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h6>{{__('messages.Featured Works')}}</h6>
@@ -556,11 +556,12 @@
                     </div>
                 </div>
                 <!-- project more button -->
-                <div class="col-lg-12 col-md-12">
-                    <div class="project-flip-more-btn-box text-center">
 
-                        <a class="btn-primary" href="{{route('project')}}">{{__('messages.View All Projects')}}</a>
-                    </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="services-more-btn-box text-center">
+
+                    <a class="btn-primary" href="{{route('project')}}">{{__('messages.View All Projects')}}</a>
                 </div>
             </div>
         </div>
@@ -699,7 +700,7 @@
     <!-- Start Blog Section -->
     <section class="blog-area pb-100">
         <div class="container">
-            <div class="row">
+            <div class="row" style="direction: rtl;margin-right: 15px;">
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h6>{{__('messages.OUR LATEST BLOG')}}</h6>

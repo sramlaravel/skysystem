@@ -43,7 +43,7 @@ class ApplyRequest extends FormRequest
     public function messages(){
 
         return [
-            'required'=> 'هذا الحقل مطلوب ',
+            'required'=>  ('messages.required'),
             'max'=> 'هذا الحقل طويل',
             'phone.min'=> 'حقل التلفون قصير جدا يجب ان يكون اقل شي 9 ارقام',
             'cv.required' => 'يجب تحميل السيفي تبعك ومن الافضل ان يكون pdf',

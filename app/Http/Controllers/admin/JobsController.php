@@ -80,19 +80,18 @@ else
             }
 
             Jobs::create([
-                'title' => $request->get('title'),
-                'location' => $request->get('location'),
-                'image' =>$filePath,
-                'requirements' => $request->get('requirements'),
-
-
+                'title_ar' => $request->get('title_ar'),
+                'title_en' => $request->get('title_en'),
+                'location_ar' => $request->get('location_ar'),
+                'location_en' => $request->get('location_en'),
+                'requirements_ar' => $request->get('requirements_ar'),
+                'requirements_en' => $request->get('requirements_en'),
+                'image' => $filePath,
 
 
             ]);
-
-            return redirect()->route('admin.Jobs')->with(['success' => 'تم الحفظ بنجاح']);
-
-        } catch (\Exception $ex) {
+        }
+           catch (\Exception $ex) {
 
             return redirect()->route('admin.Jobs')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
 

@@ -6,14 +6,15 @@ use App\City;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
+
 class Jobs extends Model
 {
     use Notifiable;
     protected $table='jobs';
-    protected $fillable=['id','title','requirements','location','image'];
 
 
 
+    protected $fillable=['id','title_ar','title_en','requirements_ar','requirements_en','location_ar','location_en','image','created_at','updated_at'];
 //
 //    protected $hidden = ['category_id', 'password'];
 //
@@ -33,7 +34,7 @@ class Jobs extends Model
 
     public function scopeSelection($query)
     {
-        return $query->select(['id','title','requirements','location','image']);
+        return $query->select(['id','title_ar','title_en','requirements_ar','requirements_en','location_ar','location_en','image']);
     }
 
 

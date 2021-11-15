@@ -26,11 +26,15 @@ class JobsRequest  extends FormRequest
 
         return [
 
-            'title' => 'required|string|max:400',
-            'requirements' => 'required|string|max:2000',
-            'location' => 'required|string|max:100',
+            'title_en' => 'required|string|max:500',
+            'title_ar' => 'required|string|max:500',
+            'requirements_ar' => 'required|string|max:2000',
+            'requirements_en' => 'required|string|max:2000',
+            'location_ar' => 'required|string|max:100',
+            'location_en' => 'required|string|max:100',
 
             'image' => 'required_without:id|mimes:jpg,jpeg,png|max:10048',
+
 
 
         ];

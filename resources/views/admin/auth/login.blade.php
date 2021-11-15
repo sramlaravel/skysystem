@@ -1,6 +1,8 @@
 @extends('layouts.login')
 @section('title','الدخول')
 @section('content')
+
+
     <section class="flexbox-container">
         <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="col-md-4 col-10 box-shadow-2 p-0">
@@ -8,7 +10,7 @@
                     <div class="card-header border-0" style="background-color: #ecb62d;">
                         <div class="card-title text-center">
                             <div class="p-1">
-                                <img src="{{asset('theme\standard\images/logo.png')}}" alt="LOGO"/>
+                                <img src="{{asset('assets/img/logo-black.png')}}" alt="LOGO"/>
 
                             </div>
                         </div>

@@ -38,7 +38,7 @@ class ContactRequest extends FormRequest
     public function messages(){
 
         return [
-            'required'=> 'هذا الحقل مطلوب ',
+            'required'=>  __('messages.required'),
             'max'=> 'هذا الحقل طويل',
             'min'=> 'هذا الحقل قصير',
 //            'category_id.exists'  => 'القسم غير موجود ',

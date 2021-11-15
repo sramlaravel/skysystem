@@ -16,7 +16,7 @@ return [
      "Home"=>'Home',
     "About"=>'About us',
     "Blog Details"=>"Blog Details",
-    "Recent Posts"=>"المشاركات الاخيرة",
+    "Recent Posts"=>"Recent Posts",
     "2021"=>'© 2021 - All Rights Reserved for Company',
     "company"=>'Sky systems ',
     "address"=>'Address: Al-Asbahi Street, in front of Bharat Yassin.',
@@ -75,6 +75,36 @@ return [
 
     "Single Project"=>"Detials Project",
     "Latest Projects"=>"Latest Projects",
+    "job opportunities"=>"Job opportunities",
+    "no job"=>"!! There are currently no jobs, dear visitor",
+    "Submit"=>"Submit",
+    "Job Requirements"=>"Job Requirements",
+    "Contact"=>"Contact Us",
+
+    'required' => 'This field is required',
+
+    "Address"=>': Address ',
+    "Address_details"=>' Al-Asbahi Street, in front of Bharat Yassin.',
+
+    "Phones"=>': Phones:',
+    "Phones_details"=>'  00967775355003 -01688922',
+    "emails"=>':   Email',
+    "emails_details"=>' skyforsystems@gmail.com ',
+
+    'name'=>'name',
+    'Your Phone'=>'Your Phone',
+    'Emial'=>'your Emial   ',
+    'messages'=>'Your message *',
+    'Send Message'=>'Send Message',
+    'Experience'=>"Experience",
+    'home adress'=>"home adress",
+    "qualification"=>"qualification",
+    "Age"=>"Age",
+    "Applicants name"=>"Applicant's name",
+    "Curriculum Vitae"=>"Your CV",
+    "FAMILY"=>"We are glad to have you In our family",
+
+
 
 
 ];

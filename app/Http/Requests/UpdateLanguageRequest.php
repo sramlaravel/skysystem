@@ -39,7 +39,7 @@ class UpdateLanguageRequest  extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'هذا الحقل مطلوب',
+            'required' => __('messages.required') ,
             'title_ar.string' => 'اسم العنوان  لابد ان يكون احرف',
             'title_en.string' => 'اسم العنوان  لابد ان يكون احرف',
             'description_ar.max' => 'العنوان  لابد الا يزيد عن 100 احرف ',

@@ -37,6 +37,14 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+
+
+    <link rel="stylesheet" type="text/css" href="{{asset('theme/standard/mdb.rtl.css')}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset('theme/standard/slick.min.css') }}" />
+
+
+    <link rel="stylesheet" type="text/css" href="{{asset('theme/standard/responsive.css')}}" />
 </head>
 
 <body>
@@ -84,10 +92,14 @@
 <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
 <!-- Scroll To Fixed JS -->
 <script src="{{asset('assets/js/jquery-scrolltofixed.js')}}"></script>
+
 <!-- flickity JS -->
 <script src="{{asset('assets/js/flickity.pkgd.min.js')}}"></script>
 <script src="{{asset('assets/js/bg-lazyload.js')}}"></script>
-<script src="{{asset('assets/js/flickity-fade.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBINmrOrN5ISnoraCz6Ei3Y0Fifm5lx0Zk"></script>
+{{--//<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBINmrOrN5ISnoraCz6Ei3Y0Fifm5lx0Zk"></script>--}}
+<script src="{{asset('assets/js/gmap3.min.js')}}"></script>
+<script src="{{asset(('assets/js/flickity-fade.js'))}}"></script>
 <!-- WOW Min JS -->
 <script src="{{asset('assets/js/wow.min.js')}}"></script>
 <!-- Main JS -->

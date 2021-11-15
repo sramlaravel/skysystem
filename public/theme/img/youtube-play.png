@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>Swaid Exchange - Error page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <style>
+        @font-face {
+            font-family: 'GESSTwoMedium';
+            src: url('/theme/standard/fonts/GE SS Two Medium.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        html, body {
+            font-family: 'GESSTwoMedium';
+            height: 100%;
+        }
+        body.rtl {
+            direction: rtl;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: table;
+            font-weight: 100;
+        }
+
+        /*error*/
+        .errorPage {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sa6549607c78f5c11/image/ib8d9d066725ce0de/version/1448805263/image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        .errorPage .overaly {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #79000e;
+            opacity: 0.95;
+        }
+
+        .errorPage h2 {
+            position: absolute;
+            left: 0;
+            -ms-transform: translate(100px, 100px) rotate(-90deg); /* IE 9 */
+            -webkit-transform: translate(100px, 100px) rotate(-90deg) rotate(-20deg); /* Safari */
+            transform: translate(100px, 100px) rotate(-90deg);
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        .errorPage .error {
+            width: 75%;
+            height: 300px;
+            margin: 70px auto;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            -moz-box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 0.9);
+        }
+
+        .errorPage .error h1 {
+            font-size: 5rem;
+            letter-spacing: .2rem;
+        }
+
+        .errorPage .error a {
+            text-decoration: none;
+            background: #fcaf17;
+            color: #000;
+            padding: 10px 20px;
+            /* border-radius: 10rem; */
+            font-size: 16px;
+            display: inline-block;
+            max-width: 200px;
+            margin: auto;
+            border-radius: 3px;
+        }
+
+        /*end error*/
+    </style>
+</head>
+<body class="  ltr">
+<div class="errorPage">
+    <div class='overaly'>
+        <div class='error'>
+            <h1>404</h1>
+            <p>Sorry, but nothing exists here.
+                <a href="/en">
+                    Go back
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

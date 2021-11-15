@@ -1,0 +1,135 @@
+/*@font-face {*/
+    /*font-family: 'GothamBold';*/
+    /*src: url('fonts/gotham/GothamSSm-Bold.eot'); !* IE9 Compat Modes *!*/
+    /*src: url('fonts/gotham/GothamSSm-Bold.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *! url('fonts/gotham/GothamSSm-Bold.woff') format('woff'), !* Modern Browsers *! url('fonts/gotham/GothamSSm-Bold.ttf') format('truetype'), !* Safari, Android, iOS *! url('fonts/gotham/GothamSSm-Bold.svg#svgFontName') format('svg'); !* Legacy iOS *!*/
+    /*font-weight: 700;*/
+    /*font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'GothamMedium';*/
+    /*src: url('fonts/gotham/GothamSSm-Medium.eot'); !* IE9 Compat Modes *!*/
+    /*src: url('fonts/gotham/GothamSSm-Medium.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *! url('fonts/gotham/GothamSSm-Medium.woff') format('woff'), !* Modern Browsers *! url('fonts/gotham/GothamSSm-Medium.ttf') format('truetype'), !* Safari, Android, iOS *! url('fonts/gotham/GothamSSm-Medium.svg#svgFontName') format('svg'); !* Legacy iOS *!*/
+    /*font-weight: 400;*/
+    /*font-style: normal;*/
+/*}*/
+
+@font-face {
+    font-family: "arial";
+    src: url('fonts/arial.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    direction: ltr;
+    text-align: left;
+    font-family: "arial";
+
+}
+h1, h2, h3, h4, h5, h6, strong {
+font-weight: bold;
+    font-family: "arial";
+
+}
+.newsOffersContainer .heading_2 a span{
+    font-family: "arial";
+
+}
+.ltr {
+    direction: ltr;
+}
+.newsOffersContainer .heading_2 a span {
+    float: right;
+}
+.locations .textCont {
+  left: auto;
+    right: 30px;
+}
+#searchbox svg.close {
+    left: auto;
+    right: 20px;
+}
+.currencySlidersContainer .heading_2 {
+    padding: 0 30px 0 30px;
+}
+
+
+.timeline li {
+    float: left;
+    text-align: left;
+}
+
+
+.timeline li:first-child span:after {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.timeline li:last-child span:before {
+
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.newsOffersContainer .heading_2 a span {
+    float: right;
+}
+.mainSlidersCont .floatDiv {
+    direction: ltr;
+}
+.timeline li:before, .timeline li:after {
+    width: 70%;
+
+}
+.featuredSliders .row ,
+table{
+    direction: ltr;
+}
+.featuredSliders .slick-dots {
+    right: auto;
+    left: 0;
+}
+.contact-form textarea.msg,
+.contact-form input, .get-updates input{
+    text-align: left;
+}
+.helpContainer:after {
+    background-position: 91% center;
+}
+.helpContainer .nav a {
+    font-size: 16px;
+}
+.nav-pills .nav-link.active:after {
+    right: -40px;
+    left: auto;
+    transform: rotate(0deg);
+}
+.close-icon{
+    float: right;
+}
+.helpCenterPage .mega-header .heading_1 img {
+    border-right: 1px solid #fff;
+    border-left: 0;
+}
+.helpCenterOptions .col-md-4 h4 {
+    background-position: left center;
+    padding-left: 47px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: -47px;
+}
+.checkbox input:checked + label:after {
+    right: auto;
+    left:  14px;
+    transform: rotate(45deg);
+}
+.btn-link{
+    text-align: left;
+}
+.para_1.right {
+    margin-left: 0;
+}
+.newsOffersContainer
+.slick-slide {
+    float: left;
+}

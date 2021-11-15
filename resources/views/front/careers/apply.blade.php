@@ -74,15 +74,15 @@
     <section class="news-section blog-grid blog-page section-padding overlay-style-one sec-pad-2">
         <div class="container">
             <div class="heading text-center site-width featured" style="background-color: #2e4066;padding-bottom: 50px;  padding-top: 20px; ">
-                <h2 class="heading_1" style="    color: #FFF;">  الوظائف الشاغرة  </h2>
+                <h2 class="heading_1" style="    color: #FFF;">  {{__('messages.job opportunities')}}   </h2>
             </div>
         <div class="row mt-5 pt-3">
            
             @include('admin.includes.alerts.success')
             @include('admin.includes.alerts.errors')
              <div class="col-md-6">
-                 <h3 class="text-center alt-color mb-4 mt-2">
-                    نسعد بأن تكون من عالئنتا               </h3>
+                 <h3 class="text-center alt-color mb-4 mt-2" style="color:#5764ec ">
+                     {{__('messages.FAMILY')}}             </h3>
 
                 <!-- Contact Form -->
                  @foreach($newsDetail as $n)
@@ -104,46 +104,46 @@
                             </ul>
                         </div>
                     @endif
-                    <div class="row">
+                    <div class="row" style="flex-direction: column">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <input name="name" class="form-control" type="text" placeholder="اسم المتقدم"   value="{{Request::old('name')}}"  required="">
+                                <input name="name" class="form-control" type="text" placeholder="{{__('messages.Applicants name')}}"   value="{{Request::old('name')}}"  required="">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input name="age" class="form-control form__field phone  num required"type="text"  placeholder="العمر"  value="{{Request::old('age')}}"  required="">
+                                <input name="age" class="form-control form__field phone  num required"type="text"  placeholder="{{__('messages.Age')}}"  value="{{Request::old('age')}}"  required="">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input name="degree" class="form-control" type="text" placeholder="المؤهل" value="{{Request::old('degree')}}"   required="">
+                                <input name="degree" class="form-control" type="text" placeholder="{{__('messages.qualification')}}" value="{{Request::old('degree')}}"   required="">
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input name="email" class="form-control" type="email" placeholder="البريد الإلكتروني" value="{{Request::old('email')}}"  >
+                                <input name="email" class="form-control" type="email" placeholder="{{__('messages.Emial')}}" value="{{Request::old('email')}}"  >
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
 
 
-                            <input name="phone"   type="text"  placeholder="التلفون" value="{{Request::old('phone')}}" class="form-control  form__field phone  num required" >
+                            <input name="phone"   type="text"  placeholder="{{__('messages.Your Phone')}}" value="{{Request::old('phone')}}" class="form-control  form__field phone  num required" >
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <input name="address" class="form-control" type="text" placeholder="عنوان السكن"  value="{{Request::old('address')}}">
+                                <input name="address" class="form-control" type="text" placeholder="{{__('messages.home adress')}}"  value="{{Request::old('address')}}">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                 <textarea name="skills" class="form-control" rows="3" type="text"  placeholder="الكفاءات والخبرات"  value="{{Request::old('skills')}}" aria-required="true"></textarea>
+                                 <textarea name="skills" class="form-control" rows="3" type="text"  placeholder="  {{__('messages.Experience')}}"  value="{{Request::old('skills')}}" aria-required="true"></textarea>
                             </div>
                         </div>
                         <div class="col-sm-12 row">
-                            <div class="col-sm-4"><label class="col-form-label">السيرة الذاتية</label></div>
+                            <div class="col-sm-4"><label class="col-form-label">{{__('messages.Curriculum Vitae')}}</label></div>
                             <div class="form-group col-sm-8">
                                 <input class="form-control" id="CvUpload" name="cv" type="file" value="{{Request::old('cv')}}" accept="application/pdf">
                             </div>
@@ -152,7 +152,7 @@
                             <div class="form-group clearfix">
                                 <div class="form-group clearfix">
                                     <button type="submit" name="SendEmployment"
-                                            class="btn alt-btn w-100 form-control">ارسال
+                                            class="btn alt-btn w-100 form-control" style="background-color: #007bff45">{{__('messages.Send Message')}}
                                     </button>
                                 </div>
                             </div>

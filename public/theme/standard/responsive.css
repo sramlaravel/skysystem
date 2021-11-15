@@ -1,0 +1,270 @@
+/*responsive*/
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 990px) {
+    .navbar-collapse {
+    }
+    header .navbar-nav {
+        padding-top: 80px;
+
+    }
+    .navbar-text {
+        padding-bottom: 100px;
+    }
+    .lang.mobile {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 786px) {
+    .tab-content {
+        padding-top: 10px;
+        opacity: 0.8;
+    }
+
+    .servicesPage .nav-pills .nav-link {
+        max-width: 100%;
+    }
+
+    .servicesPage .nav-pills .nav-link.active:after {
+        display: none;
+    }
+
+    #search-box {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+
+    }
+
+    .servicesSliders {
+        width: 90%;
+    }
+
+    .contact .thumbnail a {
+        text-align: right;
+        padding-top: 50px;
+        background-position: top right;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    #navbarText {
+        padding-bottom: 50px;
+    }
+
+    .icon-search {
+        display: inline-block;
+        margin: 30px 20px;
+    }
+
+    .marquee-video {
+        display: none;
+    }
+
+    .image.for-video {
+        display: block;
+    }
+
+    .bg-1.exchangeServices {
+        background: #fcaf17;
+        padding: 5px 0;
+    }
+
+    .bg-1.exchangeServices h2 {
+        display: none;
+    }
+
+    .bg-1.exchangeServices .btn {
+        background: transparent;
+        border: none !important;
+        display: block;
+        max-width: 100%;
+        text-align: right;
+        border-bottom: 1px solid #bd8c16 !important;
+        border-radius: 0;
+        padding: 20px 0;
+        background-image: url("images/arrow.png");
+        background-position: center left;
+        background-repeat: no-repeat;
+    }
+
+    .bg-1.exchangeServices .text-right .btn {
+        border-bottom: none !important;
+
+    }
+
+    .bg-1.exchangeServices .mt-4 {
+        margin-top: 0 !important;
+    }
+
+    .timeline {
+        display: none;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        color: #ccc;
+        font-size: 33px;
+
+    }
+
+    .slick-prev, .slick-next {
+        top: auto;
+        bottom: -13px;
+        background: transparent;
+        width: 40px;
+        height: 40px;
+    }
+
+    .homePage .newsOffersContainer {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .newsContainer2 {
+        padding-top: 0;
+    }
+
+    .newsPage .newsOffersContainer {
+        padding-top: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .newsOffersContainer .slick-dots {
+        position: relative;
+        bottom: 0;
+        display: table !important;
+        margin: auto;
+        width: auto;
+    }
+
+    .helpContainer:after {
+        display: none;
+    }
+
+    .locations .textCont,
+    .locations .textCont .text {
+        position: relative;
+        top: auto;
+        bottom: auto;
+    }
+
+    .locations .textCont {
+        height: 100%;
+        width: 100%;
+        left: 0;
+    }
+
+    .locations .col-md-8 {
+        overflow: hidden;
+        padding: 0;
+
+    }
+
+    .locations {
+        padding-bottom: 20px;
+    }
+
+    .locations .col-md-8 img {
+        width: 170%;
+
+    }
+
+    .locations .para_1 {
+        font-size: 24px;
+        margin: 30px auto;
+    }
+
+    .servicesList .card,
+    .objs-values .card {
+        padding: 10px 0;
+    }
+
+    .aboutPage > div.featured {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .description p {
+        font-size: 15px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .services .img-container {
+        padding: 0;
+    }
+
+    .contactPage > div.featured {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    header .navbar-brand img {
+        max-width: 60px;
+    }
+
+    .servicesList {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 515px) {
+    .fa-whatsapp {
+        display: inline-block;
+    }
+
+    .helpContainer .nav a {
+        font-size: 15px;
+    }
+
+    .locations .text h4 {
+        font-size: 20px;
+        max-width: 200px;
+    }
+}
+
+.aboutPage .modal-body {
+    text-align: right;
+}
+#board-directors .board-members>div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#about #values .values_container a{
+    width: 100%;
+}
+#about #values ul, #about #values .values_container {
+    width: 100%;
+}
+#featured-currencies img{
+    left: 100%;
+}
+.products .product-title div p {
+    width: 100%;
+}
+.products .product-title img{
+    display: none;
+}
+.products .product-title {
+    background-color: #9E896D;
+}
+/*end responsive*/

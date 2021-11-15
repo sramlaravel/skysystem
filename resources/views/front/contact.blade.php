@@ -2,101 +2,145 @@
 
 @section('content')
 
+    <!-- Start Page Title Area -->
+    <div class="page-title-area">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <ul>
 
-    <section class="mextreo-hero inner mar-bot-140">
+                            <li>{{__('messages.Contact')}} </li>
+                            <li><a href="{{route('home') }}">{{__('messages.Home')}}</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Title Area -->
+    <!-- Start Contact Section -->
+    <div class="contact-section section-padding">
         <div class="container">
-            <div class="row">
+            <div class="row" style="flex-direction: column">
 
-                <div class="col-md-6">
+                <div class="col-lg-12 col-md-12">
+                    @include('admin.includes.alerts.success')
+                    @include('admin.includes.alerts.errors')
+                    <div class="contact-form contact-form-3">
+                        <p class="form-message"></p>
+                        <form id="contact-form" class="form" action="{{route('contact.create') }}" method="POST">
+                            @csrf
+                            <div class="row" style="flex-direction: column" >
 
-                    <div class="hero-content">
-                        <div class="col-md-12 text-center">
-
-                            <h6 class="ht-tittle" data-aos="fade-right" data-aos-duration="1500">
-                            @include('admin.includes.alerts.success')
-                            @include('admin.includes.alerts.errors')
-                            </h6>
-                        </div>
-                        <h6 class="ht-tittle" data-aos="fade-right" data-aos-duration="1500">اتصل</h6>
-                        <h2 data-aos="fade-up" data-aos-duration="2000">ابقى على تواصل</h2>
-                        <p data-aos="fade-up" data-aos-duration="2500">
-                            نحن في انتظارك في مكتبنا في الدائري أو في الطريق ،
-                            اتصل بنا عبر نموذج الاتصال أدناه .
-                        </p>
-
-                        <div class="mextreo-contact" data-aos="fade-up" data-aos-duration="3000">
-                            <form   method="post"  action="{{route('contact.create') }}" >
-                                @csrf
-                                <div class="form-group mcfg">
-                                    <input type="text" class="form-control m-input" name="name" id="name"
-                                           placeholder="اسمك *" value="{{Request::old('name')}}"
-                                       >
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <input style="text-align: right" type="text"  class="form-control" name="name" id="name"  placeholder="{{__('messages.name')}} *" value="{{Request::old('name')}}"> </div>
                                     @error("name")
                                     <span class="text-danger">{{$message}}</span>
                                     @enderror
                                 </div>
-                                <div class="form-group mcfg">
-                                    <input type="text" class="form-control m-input" name="email" id="email"
-                                           placeholder="بريدك الالكتروني *" value="{{request::old('email')}}"
-                                          >
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <input  style="text-align: right" type="text" name="phone" id="phone" required class="form-control" placeholder="{{__('messages.Your Phone')}}"
+                                               laceholder="{{__('messages.Your Phone')}}"  value="{{Request::old('phone')}}"></div>
+                                        @error("phone")
+                                        <span class="text-danger">{{$message}}</span>
+                                        @enderror
+                                </div>
+
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <input style="text-align: right" type="email" name="email" id="email" class="form-control"
+                                               placeholder="{{__('messages.Emial')}} " value="{{request::old('email')}}"> </div>
+
                                     @error("email")
                                     <span class="text-danger">{{$message}}</span>
                                     @enderror
                                 </div>
+                                {{--<div class="col-lg-6 col-md-12">--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--<input type="text" name="subject" id="subject" class="form-control" required placeholder="Your Subject"> </div>--}}
+                                {{--</div>--}}
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                          <textarea  style="text-align: right" cols="30" rows="6"  class="form-control m-input" name="message" id="message"
+                                                    placeholder=" *{{__('messages.messages')}} "
+                                                    onblur="this.placeholder ='{{__('messages.messages')}}  *'"></textarea>
+                                        @error("message")
+                                        <span class="text-danger">{{$message}}</span>
+                                        @enderror
 
-                                <div class="form-group mcfg">
-                                    <input type="text" class="form-control m-input" name="phone" id="phone"
-                                           placeholder="رقم هاتفك الخلوي *"  value="{{Request::old('phone')}}"
-                                       >
-                                    @error("phone")
-                                    <span class="text-danger">{{$message}}</span>
-                                    @enderror
+                                    </div>
                                 </div>
-
-                                <div class="form-group mcfg">
-                                <textarea rows="4" class="form-control m-input" name="message" id="message"
-                                          placeholder="رسالة *"
-                                          onblur="this.placeholder ='رسالة *'"></textarea>
-                                    @error("message")
-                                    <span class="text-danger">{{$message}}</span>
-                                    @enderror
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="btn btn-primary">{{__('messages.Send Message')}} </button>
                                 </div>
-                                <button type="submit"   id="submit"   class="m-submit">أرسل رسالة</button>
-
-
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="hero-inner-img">
-                        <img src=" " alt="" data-aos="fade-left" data-aos-duration="2000">
-                    </div>
-                    <div class="contact-details" data-aos="fade-up" data-aos-duration="3000">
-                        <img src="{{asset('assets/img/logo.png')}}" alt="">
-                        <div class="single-info">
-                            <h5>عنوان:</h5>
-                            <p>شركة انجاز سوفت للانظمة الخاصة المحدوده
-                                مجموعة الجيل الجديد، الدائري -برج كنتاكي -جوار, Sana'a, Yemen</p>
-
-                        </div>
-                        <div class="single-info">
-                            <h5>هاتف:</h5>
-                            <p>+967-776-016-060</p>
-                            <p>01630502 - 771-110-033</p>
-                        </div>
-                        <div class="single-info">
-                            <h5>البريد الإلكتروني:</h5>
-                            <p><a href="https://demo.voidcoders.com/cdn-cgi/l/email-protection" class="__cf_email__"
-                                  data-cfemail="94f5f9f5fdf8d4f9f1ece0e6f1fbbaf7fbf9">info@engazsoftplus.com</a></p>
-                            <p><a href="https://demo.voidcoders.com/cdn-cgi/l/email-protection" class="__cf_email__"
-                                  data-cfemail="8de3e8fae0ece4e1cde0e8f5f9ffe8e2a3eee2e0">https://www.facebook.com/Engaz</a></p>
+                <div class="col-lg-12 col-md-12">
+                    <div class="contact-information-box-3">
+                        <div class="row" style="flex-direction: column">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="single-contact-info-box">
+                                    <div class="contact-info">
+                                        <i class="icofont-location-pin"></i>
+                                        <h6 style="text-align: center" >   {{__('messages.Address')}}</h6>
+                                        <p > {{__('messages.Address_details')}}</p>
+                                        <p> {{__('messages.Address_details')}}</p>
+                                    </div>
+                                    <div class="contact-info-bg-icon">
+                                        <i class="icofont-location-pin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="single-contact-info-box">
+                                    <div class="contact-info">
+                                        <i class="icofont-phone-circle"></i>
+                                        <h6 style="text-align: center">{{__('messages.Phones')}}</h6>
+                                        <p>{{__('messages.Phones_details')}}</p>
+                                        <p>{{__('messages.Phones_details')}}</p>
+                                    </div>
+                                    <div class="contact-info-bg-icon">
+                                        <i class="icofont-phone-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="single-contact-info-box">
+                                    <div class="contact-info">
+                                        <i class="icofont-email"></i>
+                                        <h6 style="text-align: center">  {{__('messages.emails')}} </h6>
+                                        <p>{{__('messages.emails_details')}}</p>
+                                        <p>{{__('messages.emails_details')}}</p>
+                                    </div>
+                                    <div class="contact-info-bg-icon">
+                                        <i class="icofont-email"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End Contact Section -->
+
+
+
+
+    <!-- Map Section Start -->
+    <div class="map-area">
+        <div class="map-content">
+            <div class="map-canvas" id="contact-map"></div>
+        </div>
+    </div>
+
 
 
     <section class="g-map">
